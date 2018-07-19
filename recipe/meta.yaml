@@ -1,4 +1,4 @@
-{% set version = "0.1.14" %}
+{% set version = "0.1.18" %}
 {% set name = "PyScreeze" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   fn: PyScreeze-{{ version }}.tar.gz
-  sha256: fb3c4d50e9b1389d76648e6ea99d1bc79e7df32bd01ae4eb6bf7397e54597421
+  sha256: 11737e196a5dc35b723e0b34784559c052c10af8518f37e9cf70c86b5936fb00
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 build:
