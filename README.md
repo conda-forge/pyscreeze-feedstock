@@ -14,12 +14,15 @@ Summary: A simple, cross-platform screenshot module for Python 2 and 3.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyscreeze-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyscreeze-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyscreeze-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyscreeze-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyscreeze/badges/version.svg)](https://anaconda.org/conda-forge/pyscreeze)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyscreeze/badges/downloads.svg)](https://anaconda.org/conda-forge/pyscreeze)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyscreeze-green.svg)](https://anaconda.org/conda-forge/pyscreeze) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyscreeze.svg)](https://anaconda.org/conda-forge/pyscreeze) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyscreeze.svg)](https://anaconda.org/conda-forge/pyscreeze) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyscreeze.svg)](https://anaconda.org/conda-forge/pyscreeze) |
 
 Installing pyscreeze
 ====================
