@@ -32,8 +32,7 @@ about:
   home: https://github.com/asweigart/pyscreeze
   license: BSD 3-Clause
   license_family: BSD
-  # https://github.com/asweigart/pyscreeze/pull/31
-  #license_file: LICENSE.txt
+  license_file: LICENSE.txt
   summary: A simple, cross-platform screenshot module for Python 2 and 3.
 
 extra:
