@@ -9,9 +9,12 @@ source:
   fn: PyScreeze-{{ version }}.tar.gz
   sha256: dcdd1b20fb6366697d1a0ce9afbfe467799d9294cfb8f2ba5d9cd66a33aceedc
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  patches:
+    # https://github.com/asweigart/pyscreeze/issues/46
+    - PR47.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
