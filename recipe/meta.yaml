@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
     - pip
   run:
-    - python
+    - python >=3.6
     - pillow
 
 test:
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/asweigart/pyscreeze
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: A simple, cross-platform screenshot module for Python 2 and 3.
