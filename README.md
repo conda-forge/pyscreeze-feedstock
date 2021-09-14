@@ -3,7 +3,7 @@ About pyscreeze
 
 Home: https://github.com/asweigart/pyscreeze
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyscreeze-feedstock/blob/master/LICENSE.txt)
 
