@@ -6,32 +6,33 @@ package:
   version: {{ version }}
 
 source:
-  fn: PyScreeze-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyScreeze-{{ version }}.tar.gz
   sha256: 4428600ed19b30cd3f4b5d83767d198fc1dbae7439eecf9bd795445c009b67ae
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
-    - setuptools
     - pip
+    - python >=3.6
   run:
     - python >=3.6
-    - pillow
+    - pillow >=3.2.0
 
 test:
   imports:
     - pyscreeze
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/asweigart/pyscreeze
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE.txt
   summary: A simple, cross-platform screenshot module for Python 2 and 3.
 
