@@ -17,18 +17,23 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
-    - pillow >=3.2.0
+    - python >=3.8
+    - pillow >=9.2.0
+    - pyscreenshot
 
 test:
+  source_files:
+    - tests
   imports:
     - pyscreeze
   commands:
     - pip check
+    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/asweigart/pyscreeze
