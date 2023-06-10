@@ -24,16 +24,17 @@ requirements:
     - pyscreenshot
 
 test:
-  source_files:
-    - tests
+# Remove test suite for now because it requires screengrabs etc.
+#   source_files:
+#     - tests
   imports:
     - pyscreeze
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys tests
+#     - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
-    - pytest
+#     - pytest
 
 about:
   home: https://github.com/asweigart/pyscreeze
