@@ -22,20 +22,14 @@ requirements:
   run:
     - python >=3.8
     - pillow >=9.2.0
-    - pyscreenshot
 
 test:
-# Remove test suite for now because it requires screengrabs etc.
-#   source_files:
-#     - tests
   imports:
     - pyscreeze
   commands:
     - pip check
-#     - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
-#     - pytest
 
 about:
   home: https://github.com/asweigart/pyscreeze
