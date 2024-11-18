@@ -1,4 +1,4 @@
-{% set version = "0.1.30" %}
+{% set version = "1.0.1" %}
 {% set name = "PyScreeze" %}
 
 package:
@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyScreeze-{{ version }}.tar.gz
-  sha256: 74098ad048e76a6231dcfa6243343af94459b8c829f9ccb7a44a5d3b147a67d1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: cf1662710f1b46aa5ff229ee23f367da9e20af4a78e6e365bee973cad0ead4be
 
 build:
   number: 0
@@ -17,24 +17,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pillow >=9.2.0
-    - pyscreenshot
 
 test:
-# Remove test suite for now because it requires screengrabs etc.
-#   source_files:
-#     - tests
   imports:
     - pyscreeze
   commands:
     - pip check
-#     - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
-#     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/asweigart/pyscreeze
